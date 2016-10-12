@@ -3,3 +3,8 @@
 ################################################################################
 
 /WebApp/.vs/WebApp/v14/.suo
+*.dg
+/WebApp/src/WebApp/wwwroot
+/WebApp/src/WebApp/Service References/Application Insights
+/WebApp/src/WebApp/node_modules
+/WebApp/src/WebApp/typings
