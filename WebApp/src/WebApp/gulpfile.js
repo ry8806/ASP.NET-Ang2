@@ -47,6 +47,6 @@ gulp.task('beforeBuild', function () {
         .pipe(gulp.dest(webRoot + 'js/'))
     gulp.src([paths.nodeModules + '@angular/forms/bundles/forms.umd.js'])
         .pipe(gulp.dest(webRoot + 'js/'))
-    gulp.src([paths.nodeModules + 'rxjs/*.js'])
+    gulp.src([paths.nodeModules + 'rxjs/**/*.js'], { base: "node_modules/rxjs" })
         .pipe(gulp.dest(webRoot + 'js/'))
 });
