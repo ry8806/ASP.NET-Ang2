@@ -15,6 +15,17 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="~/js/shim.min.js"></script>
+    <script src="~/js/zone.js"></script>
+    <script src="~/js/Reflect.js"></script>
+    <script src="~/js/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="~/js/systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
 </head>
 <body>

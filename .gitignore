@@ -8,3 +8,6 @@
 /WebApp/src/WebApp/Service References/Application Insights
 /WebApp/src/WebApp/node_modules
 /WebApp/src/WebApp/typings
+/WebApp/src/WebApp/bin/Debug/netcoreapp1.0
+/WebApp/src/WebApp/obj/Debug/netcoreapp1.0
+/WebApp/.vs/config

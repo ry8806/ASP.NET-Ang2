@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "noImplicitAny": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "noEmitOnError": true,
     "removeComments": false,
     "sourceMap": true,
@@ -11,5 +15,6 @@
   "exclude": [
     "node_modules",
     "wwwroot"
-  ]
+  ],
+  "compileOnSave": true
 }
