@@ -24,9 +24,29 @@ gulp.task('beforeBuild', function () {
     gulp.src([paths.nodeModules + 'reflect-metadata/Reflect.js'])
         .pipe(gulp.dest(webRoot + 'js/'))
 
-    gulp.src([paths.nodeModules + 'core-js/client/shim.min.js '])
+    gulp.src([paths.nodeModules + 'core-js/client/shim.min.js'])
         .pipe(gulp.dest(webRoot + 'js/'))
 
-    gulp.src([paths.nodeModules + 'systemjs/dist/system.src.js '])
+    gulp.src([paths.nodeModules + 'systemjs/dist/system.src.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+
+    // SystemJS Needed files
+    gulp.src([paths.nodeModules + '@angular/core/bundles/core.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + '@angular/common/bundles/common.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + '@angular/compiler/bundles/compiler.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + '@angular/platform-browser/bundles/platform-browser.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + '@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + '@angular/http/bundles/http.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + '@angular/router/bundles/router.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + '@angular/forms/bundles/forms.umd.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+    gulp.src([paths.nodeModules + 'rxjs/*.js'])
         .pipe(gulp.dest(webRoot + 'js/'))
 });
