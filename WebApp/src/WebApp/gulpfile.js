@@ -30,6 +30,10 @@ gulp.task('beforeBuild', function () {
     gulp.src([paths.nodeModules + 'systemjs/dist/system.src.js'])
         .pipe(gulp.dest(webRoot + 'js/'))
 
+    // System JS
+    gulp.src(['./systemJS/systemjs.config.js'])
+        .pipe(gulp.dest(webRoot + 'js/'))
+
     // SystemJS Needed files
     gulp.src([paths.nodeModules + '@angular/core/bundles/core.umd.js'])
         .pipe(gulp.dest(webRoot + 'js/'))

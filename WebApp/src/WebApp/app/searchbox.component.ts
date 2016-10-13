@@ -4,7 +4,7 @@
 @Component({
     selector: 'search-box',
     template: `<div>
-                    <input type="text" />
+                    <input type="text" placeholder="lets get searching..." />
                </div>`
 })
 export class SearchboxComponent {
