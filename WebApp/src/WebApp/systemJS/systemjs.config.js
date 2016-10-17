@@ -5,6 +5,7 @@
 (function (global) {
     System.config({
         // map tells the System loader where to look for things
+        // ASP.NET Core exposes the wwwroot folder without the need to specify "wwwroot" in the path
         map: {
             // our app is within the app folder
             app: 'app',
