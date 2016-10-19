@@ -8,10 +8,7 @@
                </div>`
 })
 export class SearchboxComponent {
-
-    text = "Search Here";
     constructor() {
-        this.text;
     }
 
     displayAlert(msg: string) {

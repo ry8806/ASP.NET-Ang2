@@ -10,7 +10,7 @@
             // our app is within the app folder
             app: 'app',
 
-            // angular bundles
+            // angular bundles Format = ('name': 'location')
             '@angular/core': 'js/core.umd.js',
             '@angular/common': 'js/common.umd.js',
             '@angular/compiler': 'js/compiler.umd.js',
